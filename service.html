@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:rgb(168, 166, 166);
+    background-repeat:
+    background-size: cover;
+    background-position: 100rem;
+    width: 100%;
+	padding: 50px 30px 0;
+}
+
+.wrapper .header{
+	margin-bottom: 30px;
+}
+
+.wrapper .header h1{
+	font-weight: 700;
+	text-align: center;
+}
+
+.wrapper .box_wrapper{
+	display: flex;
+	justify-content: center;	
+}
+
+.wrapper .box_row{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;	
+}
+
+.wrapper .box_row .box_col{
+	margin-right: 15px;
+	width: 400px;
+	text-align: center;
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	color: #fff;
+}
+
+.wrapper .box_row .box_col:last-child{
+	margin-right: 0px;
+}
+
+.wrapper .box_row .box_col.box_col_1{
+	background: #1e2c4f ;
+}
+
+.wrapper .box_row .box_col.box_col_2{
+	background:  #1e2c4f;
+}
+
+.wrapper .box_row .box_col.box_col_3{
+	background:  #1e2c4f;
+}
+
+.wrapper .box_row .box_col .box_title{
+	margin: 12px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+	body{
+		padding: 50px 15px 0;
+	}
+	.wrapper .box_row{
+		width: 100%;	
+	}  
+}
+
+@media screen and (max-width: 767px) {
+	.wrapper .box_row{
+		flex-direction: column;
+	}
+	.wrapper .box_row .box_col{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
+    </style>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<h1>Services</h1>
+	</div>	
+	<div class="box_wrapper">
+		<div class="box_row">
+			<div class="box_col box_col_1">
+				<div class="box_img">
+					<img src="" alt="">
+				</div>
+				<div class="box_title">
+					<p>Training</p>
+				</div>
+				<div class="box_des">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div class="box_col box_col_2">
+				<div class="box_img">
+					<img src="code.png" alt="">
+				</div>
+				<div class="box_title">
+					<p>Implementation</p>
+				</div>
+				<div class="box_des">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div class="box_col box_col_3">
+				<div class="box_img">
+					<img src="camera.png" alt="">
+				</div>
+				<div class="box_title">
+					<p>Auditing & Certification</p>
+				</div>
+				<div class="box_des">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

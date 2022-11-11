@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+ .about-sec {
+    display: flex;
+    padding: 4rem 0;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(135deg,black,white,grey, #1e2c4f);
+  }
+  
+  #more {display: none;}
+
+  #myBtn{
+    font-size: 15px;
+    background-color: #1e2c4f;
+    color: white;
+    padding: 10px;
+    font-weight: 100px;
+    border-radius: 1px;
+  margin: 20px;
+   
+  
+  }
+
+  .about-img {
+    width: 550px;
+    height: 550px;
+    margin: 0 3rem;
+  }
+  
+  .about-img img {
+    height: 88%;
+    width: 100%;
+  }
+  
+  .about-intro {
+    color: black;
+    width: 450px;
+    height: 450px;
+  
+    padding-left: 2rem;
+    margin: 0 3rem;
+  }
+  
+  .about-intro p {
+    margin-top: 2rem;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    right:50px;
+    font-family: Helvetica;
+
+    
+  }
+  
+  h3{
+    font-size: 50px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about-sec {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-img {
+      width: 90%;
+    }
+  
+    .about-intro {
+      width: 100%;
+      height: 100%;
+      
+      border-left: none;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  
+    .about-intro h3,
+    p {
+      width: 80%;
+    }
+  
+    .about-intro p {
+      font-size: 12px;
+    }
+  
+  
+  }
+
+ </style>
+    </head>
+
+
+ 
+
+<body>
+
+
+  <div class="about-sec" id="about">
+    <div class="about-img">
+      <img src="tran.jpg">
+    </div>
+    <div class="about-intro">
+      <h3>Training We Provide</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+        nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
+          Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+          Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed
+          ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
+          dapibus pulvinar nibh tempor porta.</span></p>
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+  </div>
+</body>
+<script>
+    
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+</script>
+
+  </html>
+
+
